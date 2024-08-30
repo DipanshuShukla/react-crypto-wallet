@@ -7,9 +7,9 @@ export default function WalletHome() {
     const mnemonic = useSelector((state) => state.secret.mnemonic);
 
     return (
-        <div className="flex flex-col items-center w-full mt-20">
+        <div className="flex flex-col items-center w-full mt-8 sm:mt-20">
             <SecretViewer mnemonic={mnemonic} />
-            <div className="w-full md:w-auto grid lg:grid-cols-2 lg:gap-16">
+            <div className="w-full md:w-auto grid lg:grid-cols-2 lg:gap-10">
                 <WalletBoard currency={tokens.SOL} />
                 <WalletBoard currency={tokens.ETH} />
             </div>

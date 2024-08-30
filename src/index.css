@@ -17,3 +17,22 @@ body {
         rgb(27, 23, 36) 99.1%
     );
 }
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #212435;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
