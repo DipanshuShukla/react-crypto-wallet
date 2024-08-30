@@ -32,9 +32,9 @@ export default function SecretViewer(props) {
     }, [keysHidden]);
 
     return (
-        <div className="text-white w-full max-w-4xl border-4 p-10 border-gray-700 rounded-2xl bg-gray-900/50">
+        <div className="text-white box-border w-full max-w-4xl border-4 p-10 border-gray-700 rounded-2xl bg-gray-900/50">
             <div className="flex items-center justify-center w-auto h-10">
-                <span className="text-3xl">Your Secret Phrase</span>
+                <span className="text-2xl sm:text-3xl">Your Secret Phrase</span>
                 <button
                     onClick={() => {
                         setKeysHidden(!keysHidden);
